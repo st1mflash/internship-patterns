@@ -6,12 +6,10 @@ import ru.ansekolesnikov.model.employee.Manager;
 import ru.ansekolesnikov.model.employee.SimpleManager;
 import ru.ansekolesnikov.model.employee.VIPManager;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class ManagerFactoryTest {
-
-
-    private ManagerFactory managerFactory = new ManagerFactory();
+    private final ManagerFactory managerFactory = new ManagerFactory();
 
     @Test
     void testCreateSimpleManager() {

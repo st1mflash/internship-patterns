@@ -2,8 +2,6 @@ package ru.ansekolesnikov;
 
 import ru.ansekolesnikov.model.application.Application;
 
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -13,19 +11,5 @@ public class Main {
         Application application = new Application(scanner.nextInt());
         scanner.close();
         application.sendForApproval();
-
-        Date date = new Date();
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(date);
-        calendar.add(Calendar.DAY_OF_YEAR, 2);
-
-        Application buildedApplication = new Application.ApplicationBuilder(
-                "Java",
-                "developer",
-                calendar.getTime(),
-                15000
-        )
-                .description("simple description")
-                .build();
     }
 }

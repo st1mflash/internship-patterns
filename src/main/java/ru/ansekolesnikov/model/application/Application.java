@@ -35,8 +35,32 @@ public class Application {
         manager.signingApplication(this);
     }
 
-    public ApplicationBuilder builder() {
-        return null;
+    public String getName() {
+        return name;
+    }
+
+    public String getClient() {
+        return client;
+    }
+
+    public Date getCreditTerm() {
+        return creditTerm;
+    }
+
+    public int getCreditAmount() {
+        return creditAmount;
+    }
+
+    public Manager getManager() {
+        return manager;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getReason() {
+        return reason;
     }
 
     public static class ApplicationBuilder {
