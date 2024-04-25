@@ -1,4 +1,4 @@
-package ru.ansekolesnikov.application;
+package ru.ansekolesnikov.model.application;
 
 import ru.ansekolesnikov.factory.ManagerFactory;
 import ru.ansekolesnikov.model.application.Application;
