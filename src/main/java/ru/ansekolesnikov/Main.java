@@ -12,7 +12,6 @@ public class Main {
         System.out.print("Введите сумму кредита: ");
         Application application = new Application(scanner.nextInt());
         scanner.close();
-
         application.sendForApproval();
 
         Date date = new Date();
@@ -20,11 +19,13 @@ public class Main {
         calendar.setTime(date);
         calendar.add(Calendar.DAY_OF_YEAR, 2);
 
-        new Application.ApplicationBuilder(
+        Application buildedApplication = new Application.ApplicationBuilder(
                 "Java",
                 "developer",
                 calendar.getTime(),
                 15000
-        );
+        )
+                .description("simple description")
+                .build();
     }
 }
